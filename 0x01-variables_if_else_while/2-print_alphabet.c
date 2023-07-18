@@ -1,17 +1,20 @@
-#include <stdio.h>
+#include <stdio.h >
+#include <ctype.h>
 
 /**
   * main - prints alpha in lower case
+  *
   * Return: Always 0
   */
+
 int main(void)
 {
-	char lc;
-
-	for (lc = 'a'; lc <= ; 'z' lc++);
-	{
-		putchar(lc);
-	}
-	putchar('\n');
-	return (0)
+int lowercase = 'a';
+while (lower <= 'z')
+{
+putchar(lowercase);
+lowercase += 1;
 }
+putchar('\n');
+return (0);
+{
