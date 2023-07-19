@@ -17,7 +17,7 @@ int main(void)
 	}
 	while (Upper <= 'Z')
 	{
- 		putchar(Upper);
+		putchar(Upper);
 		Upper++;
 	}
 		putchar('\n');
