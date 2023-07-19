@@ -1,25 +1,25 @@
 #include <stdio.h>
 /**
-  * main -prints alphaBETS
-  *Return: Always 0 (success)
-  */
+ * main - print alpha in caps and low case
+ *
+ * Return: (0)
+ *
+ */
 int main(void)
 {
-	char lowerbet = 'a';
-	char alphabet = 'A';
+	char Lower = 'a';
+	char Upper = 'A';
 
-	while (lowerbet <= 'z')
+	while (Lower <= 'z')
 	{
-		putchar(lowerbet);
-		lowerbet++;
+		putchar(Lower);
+		Lower++;
 	}
-	while (alphabet <= 'z')
+	while (Upper <= 'Z')
 	{
-		putchar(alphabet);
-		alphabet++;
+ 		putchar(Upper);
+		Upper++;
 	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
-
-
