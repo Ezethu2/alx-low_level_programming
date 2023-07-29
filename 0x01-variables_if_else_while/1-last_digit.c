@@ -1,22 +1,24 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
-  * main - prints number is positive or negative or 0
-  * Return: Always 0
-  */
+ * main - printing random no and giving info abt its xter
+ *
+ * Return: always (0)
+ *
+ */
 int main(void)
 {
+	int n;
+	int lastd;
 
-int n, lastd;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	lastd = n % 10;
 
 	if (lastd > 5)
 	{
-		printf("Last digit of %d is %d and is greater than  5\n", n, lastd);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
 	}
 	else if (lastd == 0)
 	{
@@ -24,9 +26,7 @@ int n, lastd;
 	}
 	else
 	{
-
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
 	}
-	
 	return (0);
 }
