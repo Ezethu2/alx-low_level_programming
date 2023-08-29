@@ -1,29 +1,19 @@
 #include "lists.h"
 /**
-  * add_nodeint - add node to the beggining of a list
+  * listint_len - returns the number of elements in a linked list
+  * @h:linked list of types listint_t to traverse
   *
-  * @head: pointer to the head pointer
-  * which the head points to the first node
-  *
-  * @n: new int. to be created
-  * Return: the head
+  * Return: number of nodes
   */
-listint_t *add_nodeint(listint_t **head, const int n)
+size_t listint_len(const listint_t *h)
 {
-	listint_t *new_node;
+	size_t num = 0;
 
-	if (head == NULL)
-		return (NULL);
+	while (h)
+	{
+		num++;
+		h = h->next;
+	}
 
-	new_node = malloc(sizeof(listint_t));
-	if (new_node == NULL)
-		return (NULL);
-	if (*head == NULL)
-		new_node->next = NULL;
-	else
-		new_node->next = *head;
-	new_node->n = n;
-	*head = new_node;
-
-	return (*head);
+	return (num);
 }
