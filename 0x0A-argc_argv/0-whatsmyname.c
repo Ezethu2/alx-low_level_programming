@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
-  * main - print its name, followed by a new line.
-  * @argc : number of command line arguments
-  * @argv : array that contains the command line arguments
-  * Return : (0) when successful
-  */
-int main(int argc _attribute_((unused)), char *argv[])
+ * main - print its name, fllowed by a new line.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the command line arguments.
+ * Return: (0) when successful
+ */
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	print("%s\n".argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
